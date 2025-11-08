@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* ===== Diretórios ===== */
+    "rootDir": "src",
+    "outDir": "dist",
+
+    /* ===== Compatibilidade ===== */
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": ["chrome"],
+    "lib": ["ES2020", "DOM"],
+
+    /* ===== Configurações importantes ===== */
+    "sourceMap": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    
+    /* ===== IMPORTANTE: Desabilitar isolatedModules ===== */
+    "isolatedModules": false,
+    "verbatimModuleSyntax": false
+  },
+  "include": ["src/**/*"]
+}

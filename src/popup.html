@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cluster AutoFill</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        padding: 20px;
+        width: 280px;
+        margin: 0;
+      }
+
+      h3 {
+        margin: 0 0 15px 0;
+        color: #333;
+        font-size: 18px;
+      }
+
+      .status {
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        font-size: 13px;
+        text-align: center;
+      }
+
+      .status.active {
+        background: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+      }
+
+      .status.inactive {
+        background: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      button.activate {
+        background: linear-gradient(135deg, #00ff62, #00d956);
+        color: white;
+      }
+
+      button.activate:hover {
+        background: linear-gradient(135deg, #00d956, #00c04b);
+        transform: translateY(-1px);
+      }
+
+      button.deactivate {
+        background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+        color: white;
+      }
+
+      button.deactivate:hover {
+        background: linear-gradient(135deg, #ee5a6f, #e74c3c);
+        transform: translateY(-1px);
+      }
+
+      .domain {
+        font-size: 12px;
+        color: #666;
+        margin-top: 10px;
+        text-align: center;
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>🚀 Cluster AutoFill</h3>
+
+    <div id="status" class="status inactive">❌ Desativado nesta página</div>
+
+    <button id="toggle" class="activate">Ativar nesta página</button>
+
+    <div id="domain" class="domain"></div>
+
+    <script src="../dist/popup.js"></script>
+  </body>
+</html>

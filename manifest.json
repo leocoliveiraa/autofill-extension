@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Cluster AutoFill - Form Filler",
+  "description": "Preenche formulários de teste automaticamente com um clique. Ideal para desenvolvedores e testadores.",
+  "version": "1.0.0",
+  "author": "Seu Nome ou Empresa",
+  
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/content.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Cluster AutoFill"
+  }
+}
