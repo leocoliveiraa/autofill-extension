@@ -1,0 +1,5 @@
+# Ensure consistent line endings and attributes
+* text=auto
+*.ts text eol=lf
+*.js text eol=lf
+*.md text eol=lf

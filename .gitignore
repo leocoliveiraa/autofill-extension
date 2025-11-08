@@ -1,0 +1,34 @@
+# Node
+node_modules/
+
+# Build output
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Env files
+.env
+
+# Misc
+coverage/
+.idea/
+*.pem
+*.key
+*.crt
+
+# TypeScript
+*.tsbuildinfo
+
+# Pack
+*.tgz
+
